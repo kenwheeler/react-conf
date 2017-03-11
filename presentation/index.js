@@ -27,7 +27,7 @@ import createTheme from "spectacle/lib/themes/default";
 // Require CSS
 require("normalize.css");
 require("spectacle/lib/themes/default/index.css");
-
+require('../assets/fonts.css');
 
 const images = {
   bg: require('../assets/bg.jpg'),
@@ -55,14 +55,14 @@ const theme = createTheme({
 });
 
 const StyledListItem = styled(ListItem)`
-  font-family: AvantGardeLT-Bold;
+  font-family: 'itc_avant_garde_gothic_ltbold';
   color: #f0f0f0;
   margin: 0px 0px 20px 0px;
 `;
 
 const StrangeTop = styled.span`
   color: #DB0014;
-  font-family: AGBenguiatCyrBook;
+  font-family: 'benguiatregular';
   vertical-align: top;
   font-size: 11rem;
   letter-spacing: -5px;
@@ -70,7 +70,7 @@ const StrangeTop = styled.span`
 
 const StrangeBottom = styled.span`
   color: #DB0014;
-  font-family: AGBenguiatCyrBook;
+  font-family: 'benguiatregular';
   vertical-align: top;
   font-size: 9rem;
   letter-spacing: -5px;
@@ -81,7 +81,7 @@ const StrangeLarge = styled.span`
 `;
 
 const StrangeText = styled.span`
-  font-family: AvantGardeLT-Bold;
+  font-family: 'itc_avant_garde_gothic_ltbold';
   color: #f0f0f0;
 `;
 

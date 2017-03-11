@@ -40,8 +40,10 @@ module.exports = {
       test: /\.(png|jpg|gif)$/,
       loader: "url-loader?limit=8192"
     }, {
-      test: /\.svg$/,
+      test: /\.(svg)$/,
       loader: "url-loader?limit=10000&mimetype=image/svg+xml"
-    }]
+    },
+    { test: /\.(woff|woff2)$/, loader: 'url-loader?limit=10240&mimetype=application/font-woff' },
+    ]
   }
 };
